@@ -36,3 +36,99 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --black: rgba(11, 11, 11, 0.816);
+  --grey: rgb(213, 213, 213);
+   
+  
+  margin: 0 13%;
+
+}
+
+.head {
+  margin-top: 2%;
+  border: var(--black) solid 0px;
+  background-color: darkorange;
+  width: 100%;
+  height: 10vh;
+  padding: 2px;
+  text-align: center;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.head h1 {
+  color: white;
+  padding-top: -10%;
+  width: 100%;
+}
+
+
+.left img {
+  background-image: url('../src/Pics/R.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.cadre{    	
+  border: 1.5px solid darkorange;
+  width: var(--width);
+  height: var(--height);
+  top: var(--top);
+  left: var(--left);
+  position: absolute;
+  z-index: 10;
+}
+
+#fileToUpload {
+  margin-left: 15%;
+  margin-bottom: 2%;
+  color: darkorange;
+  
+}
+
+.container{
+  background-color: var(--grey);
+  width: 74vw;
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.right{
+  margin-left: 10%;
+  overflow-y: scroll;
+  width: 40vw;
+}
+
+.right::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--grey); /* or add it to the track */
+}
+
+.right::-webkit-scrollbar-thumb {
+  background-color: darkorange; /* or add it to the track */
+}
+.left {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.title {
+  font-size: larger;
+
+}
+.attribut {
+  color: darkorange;
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.value li{
+  list-style: none;
+}
